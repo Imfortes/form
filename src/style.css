@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+
+}
+
+.step {
+    color: #848484;
+    font-size: .95rem;
+}
+
+.step-active {
+    background-color: #6DB746;
+    color: #ffffff;
+}
+
+.step:hover {
+    background-color: #6DB746 !important;
+    color: #848484;
+}
+
+p,
+label {
+    color: #787F84;
+}
+
+.nav-link {
+    white-space: nowrap;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.nav,
+.nav-tabs,
+.nav-link,
+.nav-item,
+.active {
+    border: none !important;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    border-radius: .25rem;
+}
+
+input,
+select,
+textarea,
+#input-charge,
+.form-control,
+.form-select,
+option {
+    background-color: #f8f9fb;
+}
+
+
+
+.form-select,
+option {
+    color: #9A9EA1;
+}
+
+.next-step {
+    padding: 10px 30px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #6DB746;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fees-descr {
+    padding: 0 !important;
+}
+
+.fees-tab {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0 !important;
+    padding: 15px 30px !important;
+    color: #ffffff;
+
+}
+
+.fees-tab:hover {
+    background: inherit !important;
+    opacity: .9;
+}
+
+.col-3,
+.col-9 {
+    padding: 0 !important;
+}
+
+.col-5 {
+    padding-left: 0 !important;
+}
+
+.col-7 {
+    padding-right: 0 !important;
+}
+
+.choose-plan {
+    position: relative;
+}
+.choose-plan:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 42px solid #402484;
+    border-left: 0px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    width: 30px;
+}
