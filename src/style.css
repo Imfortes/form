@@ -132,105 +132,7 @@ option {
     left: 40px;
 }
 
-@media screen and (max-width: 450px){
 
-    #regRadioLabel,
-    #loginRadioLabel {
-        font-size: 0.8rem !important;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .payment-fees-footer {
-        max-width: 150px;
-    }
-    .choose-plan:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        border: none;
-    }
-    .payment-fees-change {
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .payment-price p {
-        font-size: 0.9rem !important;
-    }
-    .payment-price {
-        padding-right: 0 !important;
-    }
-}
-
-
-
-
-
-@media screen and (min-width: 992px) and (max-width: 1198px){
-    .payment-fees {
-        width: 100%;
-        flex-direction: column;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-}
-
-
-
-@media screen and (max-width: 1398px){
-    #fees {
-        left: -30px;
-    }
-}
-
-@media screen and (max-width: 1198px){
-    .payment-type,
-    .payment-price {
-        padding-left: 1rem;
-    }
-    #fees {
-        left: -80px;
-    }
-}
-
-@media screen and (max-width: 992px){
-    .pay-check {
-        justify-content: center !important;
-        margin-bottom: 15px !important;
-    }
-    .pay-price {
-        justify-content: center !important;
-        margin-top: 15px !important;
-    }
-    .payment-price {
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    #fees {
-        left: -120px;
-    }
-    #payment input[type='checkbox'] + label {
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .fees-list {
-        width: 100%;
-    }
-    .fees-item {
-        display: none;
-    }
-    #fees {
-        width: 100%;
-        left: 0;
-        padding: 0 12px;
-    }
-}
 
 .info__label,
 .reg__label {
@@ -438,4 +340,124 @@ input[type='file'] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.input-file-wrap {
+    margin: 40px 0px 30px 10px;
+}
+
+
+
+/* MEDIA @ */
+
+@media screen and (max-width: 450px){
+
+    #regRadioLabel,
+    #loginRadioLabel {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .payment-fees-footer {
+        max-width: 150px;
+    }
+    .choose-plan:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        border: none;
+    }
+    .payment-fees-change {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .payment-price p {
+        font-size: 0.9rem !important;
+    }
+    .payment-price {
+        padding-right: 0 !important;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1198px){
+    .payment-fees {
+        width: 100%;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1398px){
+    #fees {
+        left: -30px;
+    }
+    .input-file-wrap {
+        margin-left: 11px;
+        width: 262px;
+    }
+}
+
+@media screen and (max-width: 1198px){
+    .payment-type,
+    .payment-price {
+        padding-left: 1rem;
+    }
+    #fees {
+        left: -80px;
+    }
+    .input-file-wrap {
+        margin-left: 11px;
+        width: 217px;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .pay-check {
+        justify-content: center !important;
+        margin-bottom: 15px !important;
+    }
+    .pay-price {
+        justify-content: center !important;
+        margin-top: 15px !important;
+    }
+    .payment-price {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    #fees {
+        left: -120px;
+    }
+    #payment input[type='checkbox'] + label {
+        margin-left: 0;
+    }
+    .input-file-wrap {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .fees-list {
+        width: 100%;
+    }
+    .fees-item {
+        display: none;
+    }
+    #fees {
+        width: 100%;
+        left: 0;
+        padding: 0 12px;
+    }
 }
