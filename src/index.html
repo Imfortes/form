@@ -198,7 +198,7 @@
 
                             <div class="row">
                                 <div class="form-group d-flex justify-content-center">
-                                    <a class="next-step" id="firstStep">Следующий шаг. Регистрация</a>
+                                    <button class="next-step" id="firstStep">Следующий шаг. Регистрация</input>
                                 </div>
                             </div>
 
@@ -320,15 +320,18 @@
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom: 30px;">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" >
                                 <label for="input-company" class="reg__label">Название компании <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-company" placeholder="ООО Пекарня">
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom: 30px;">
-                                <label for="input-logo" class="reg__label" style="visibility: hidden">Логотип</label>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 input-file-wrap" style="margin: 40px 0px 30px 10px;">
                                 <input type="file" class="form-control" id="input-logo" placeholder="Загрузить логотип">
+                                <label for="input-logo" class="reg__label input-file-button">
+                                    <span class="input-file-sym" style="font-weight: 900; font-size: 1.2rem;">+</span>
+                                    <span style="margin-left: 15px; line-height: 19px; color: #6a6a6a; font-weight: 400; font-size: 1.1rem;">Загрузить логотип</span>
+                                </label>
                             </div>
                         </div>
 
@@ -827,23 +830,23 @@
 
                                     <div class="form-group">
                                         <div class="form-check mb-2 d-flex align-items-center">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                   id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1" style="margin-left: 30px;">
+                                            <input class="form-check-input" type="radio" name="payType"
+                                                   id="payCard" checked>
+                                            <label class="form-check-label" for="payCard" style="margin-left: 30px;">
                                                 Карта
                                             </label>
                                         </div>
                                         <div class="form-check mb-2 d-flex align-items-center">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                   id="flexRadioDefault2" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2" style="margin-left: 30px;">
+                                            <input class="form-check-input" type="radio" name="payType"
+                                                   id="payAcc" >
+                                            <label class="form-check-label" for="payAcc" style="margin-left: 30px;">
                                                 Счет
                                             </label>
                                         </div>
                                         <div class="form-check mb-2 d-flex align-items-center">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                   id="flexRadioDefault2" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2" style="margin-left: 30px;">
+                                            <input class="form-check-input" type="radio" name="payType"
+                                                   id="payBalance" >
+                                            <label class="form-check-label" for="payBalance" style="margin-left: 30px;">
                                                 Баланс на сайте
                                             </label>
                                         </div>

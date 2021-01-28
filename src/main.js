@@ -6,6 +6,7 @@ var ready = (callback) => {
 ready(() => {
     tabs()
     isCheck('reg')
+    isCheck('payType')
     checkTabMenu('.fees-tab')
 });
 
