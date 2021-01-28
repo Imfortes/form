@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
@@ -84,14 +85,14 @@ option {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0 !important;
-    padding: 15px 30px !important;
+    padding: 15px 20px 15px 50px !important;
     color: #ffffff;
 
 }
 
 .fees-tab:hover {
-    background: inherit !important;
-    opacity: .9;
+    color: #ffffff;
+    opacity: .5;
 }
 
 .col-3,
@@ -114,10 +115,278 @@ option {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1px;
     border-bottom: 42px solid #402484;
     border-left: 0px solid transparent;
-    border-right: 20px solid transparent;
+    border-right: 10px solid transparent;
     height: 0;
-    width: 30px;
+    width: 17px;
+}
+
+.payment-type {
+    padding-left: 20px;
+}
+
+#fees {
+    width: 710px;
+    left: 40px;
+}
+
+@media screen and (max-width: 450px){
+
+    #regRadioLabel,
+    #loginRadioLabel {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .payment-fees-footer {
+        max-width: 150px;
+    }
+    .choose-plan:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        border: none;
+    }
+    .payment-fees-change {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .payment-price p {
+        font-size: 0.9rem !important;
+    }
+    .payment-price {
+        padding-right: 0 !important;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1198px){
+    .payment-fees {
+        width: 100%;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1398px){
+    #fees {
+        left: -30px;
+    }
+}
+
+@media screen and (max-width: 1198px){
+    .payment-type,
+    .payment-price {
+        padding-left: 1rem;
+    }
+    #fees {
+        left: -80px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .pay-check {
+        justify-content: center !important;
+        margin-bottom: 15px !important;
+    }
+    .pay-price {
+        justify-content: center !important;
+        margin-top: 15px !important;
+    }
+    .payment-price {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    #fees {
+        left: -120px;
+    }
+    #payment input[type='checkbox'] + label {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .fees-list {
+        width: 100%;
+    }
+    .fees-item {
+        display: none;
+    }
+    #fees {
+        width: 100%;
+        left: 0;
+        padding: 0 12px;
+    }
+}
+
+.info__label,
+.reg__label {
+    margin-bottom: 10px !important;
+}
+
+.form-select,
+.form-control {
+    height: 50px;
+}
+
+.reg-radio {
+    padding-left: 20px;
+}
+
+
+
+.form-textarea {
+    height: 100px;
+}
+
+label {
+    font-size: 0.9rem;
+    line-height: 30px;
+    color: #848484;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.pay-label {
+    margin-left: 35px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    margin-top: 0 !important;
+}
+
+input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0 !important;
+}
+
+input[type='checkbox']+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+input[type='checkbox']+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+input[type='checkbox']:checked+label::before {
+    border-color: #6db744;
+    background-color: #6db744;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+input[type='checkbox']:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #f8f9fb;
+    border: 1px solid #dbdbdb;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+input[type='checkbox']:not(:disabled):active+label::before {
+    background-color: #f8f9fb;
+    border: 1px solid #dbdbdb;
+}
+/* стили для чекбокса, находящегося в фокусе */
+input[type='checkbox']:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+input[type='checkbox']:focus:not(:checked)+label::before {
+    background-color: #f8f9fb;
+    border: 1px solid #dbdbdb;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+input[type='checkbox']:disabled+label::before {
+    background-color: #f8f9fb;
+    border: 1px solid #dbdbdb;
+}
+input[type='checkbox']:disabled:checked+label::before {
+    background-color: #f8f9fb;
+    border: 1px solid #dbdbdb;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+
+
+input[type='radio'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type='radio']+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+input[type='radio']+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+/* стили при наведении курсора на радио */
+input[type='radio']:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #6db744;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+input[type='radio']:not(:disabled):active+label::before {
+    background-color: #000;
+    border-color: #6db744;
+}
+/* стили для радиокнопки, находящейся в фокусе */
+input[type='radio']:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+input[type='radio']:focus:not(:checked)+label::before {
+    border-color: #6db744;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+input[type='radio']:checked+label::before {
+    border-color: #6db744;
+    background-color: #6db744;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+input[type='radio']:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+#myTab .active {
+    background-color: #6db744;
+    color: #ffffff;
 }

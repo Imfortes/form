@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -36,55 +37,61 @@
 
     <div class="container d-flex justify-content-center">
 
-        <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7" style="filter: drop-shadow(0.469px 2.963px 3.5px #b9b9b9);">
-            <h2 class="text-center" style="margin-top: 55px; margin-bottom: 35px; font-family: 'Raleway', sans-serif;">Размещение вакансии</h2>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-7"
+             style="filter: drop-shadow(0.469px 2.963px 3.5px #b9b9b9);">
+            <h2 class="text-center" style="margin-top: 55px; margin-bottom: 35px; font-family: 'Raleway', sans-serif;">
+                Размещение вакансии</h2>
 
-            <ul class="nav nav-tabs nav-fill col-12" id="myTab" role="tablist" style="margin-bottom: 35px; font-family: 'Lato', sans-serif;">
-                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 tab-item" role="presentation">
-                    <a class="nav-link step step-active" id="home-tab" data-bs-toggle="tab" href="#info" role="tab"
+            <ul class="nav nav-tabs nav-fill col-12" id="myTab" role="tablist" style="margin-bottom: 35px; ">
+                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 tab-item"
+                    role="presentation">
+                    <a class="nav-link step" id="home-tab" data-bs-toggle="tab" href="#info" role="tab"
                        aria-controls="info" aria-selected="true">1. Информация о вакансии</a>
                 </li>
-                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 tab-item" role="presentation">
+                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 tab-item"
+                    role="presentation">
                     <a class="nav-link step" id="register-tab" data-bs-toggle="tab" href="#register" role="tab"
                        aria-controls="register" aria-selected="false">2. Регистрация</a>
                 </li>
-                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 tab-item" role="presentation">
+                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 tab-item"
+                    role="presentation">
                     <a class="nav-link step" id="fees-tab" data-bs-toggle="tab" href="#fees" role="tab"
-                       aria-controls="fees" aria-selected="false">3. Тарифы</a>
+                       aria-controls="fees" aria-selected="true">3. Тарифы</a>
                 </li>
-                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 tab-item" role="presentation">
-                    <a class="nav-item nav-link step" id="payment-tab" data-bs-toggle="tab" href="#payment" role="tab"
+                <li class="nav-item col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-3 tab-item"
+                    role="presentation">
+                    <a class="nav-link step" id="payment-tab" data-bs-toggle="tab" href="#payment" role="tab"
                        aria-controls="payment" aria-selected="false">4. Способ оплаты</a>
                 </li>
             </ul>
 
 
-
-
-            <form action="" class="form d-flex justify-content-center">
+            <form action="" class="form d-flex justify-content-center" style="position: relative;">
 
                 <div class="tab-content col-10">
 
                     <div class="tab-pane active show fade" id="info" role="tabpanel" aria-labelledby="home-tab">
                         <div class="tab-pane active">
 
-                            <div class="row">
+                            <div class="row" style="margin-bottom: 20px;">
                                 <div class="d-flex row">
-                                    <p style=" max-width: 575px; font-size: 0.9rem; line-height: 20px; color: #787f84; font-weight: 400; font-family: 'Lato', sans-serif;">Введите основную информацию, по этим параметрам будущий сотрудник сможет
+                                    <p style=" max-width: 575px; font-size: 0.9rem; line-height: 20px; color: #787f84; font-weight: 400; font-family: 'Lato', sans-serif;">
+                                        Введите основную информацию, по этим параметрам будущий сотрудник сможет
                                         быстро отыскать ваше объявление.</p>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="input-job">Название вакансии <span class="text-danger">*</span></label>
+                                    <label for="input-job" class="info__label">Название вакансии <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="input-job" required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="input-specialization">Специализация <span
+                                    <label for="input-specialization" class="info__label">Специализация <span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="input-specialization" required>
                                 </div>
@@ -92,14 +99,14 @@
 
                             <div class="row">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-type">Тип занятости</label>
+                                    <label for="input-type" class="info__label">Тип занятости</label>
                                     <select class="form-select" name="type" id="input-type">
                                         <option value="Выберите тип" selected>Выберите тип</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-timetable">График работы</label>
+                                    <label for="input-timetable" class="info__label">График работы</label>
                                     <select class="form-select" name="timetable" id="input-timetable">
                                         <option value="Выберите из списка" selected>Выберите из списка</option>
                                     </select>
@@ -108,19 +115,19 @@
 
                             <div class="row">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-salary-from">Зарплата от, в рублях</label>
+                                    <label for="input-salary-from" class="info__label">Зарплата от, в рублях</label>
                                     <input type="text" class="form-control" id="input-salary-from">
                                 </div>
 
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-salary-to">Зарплата до, в рублях</label>
+                                    <label for="input-salary-to" class="info__label">Зарплата до, в рублях</label>
                                     <input type="text" class="form-control" id="input-salary-to">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-experience">Опыт работы</label>
+                                    <label for="input-experience" class="info__label">Опыт работы</label>
                                     <select class="form-select" name="type" id="input-experience">
                                         <option value="Выберите тип" selected></option>
                                     </select>
@@ -129,63 +136,69 @@
 
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="input-charge">Обязанности <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="input-charge" rows="5" required></textarea>
+                                    <label for="input-charge" class="info__label">Обязанности <span class="text-danger">*</span></label>
+                                    <textarea class="form-control form-textarea" id="input-charge" rows="5"
+                                              required></textarea>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="input-requirements">Требования <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="input-requirements" rows="5" required></textarea>
+                                    <label for="input-requirements" class="info__label">Требования <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control form-textarea" id="input-requirements" rows="5"
+                                              required></textarea>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="input-conditions">Условия <span class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="input-conditions" rows="5" required></textarea>
+                                    <label for="input-conditions" class="info__label">Условия <span class="text-danger">*</span></label>
+                                    <textarea class="form-control form-textarea" id="input-conditions" rows="5"
+                                              required></textarea>
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row" style="margin-bottom: 20px;">
                                 <div class="form-group col-12">
-                                    <label for="input-drive">Водительское удостоверение</label>
+                                    <label for="input-drive" class="info__label">Водительское удостоверение</label>
                                     <select class="form-select" name="timetable" id="input-drive">
                                         <option value="Выберите из списка" selected></option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row" style="margin-bottom: 20px;">
                                 <div class="form-group">
-                                    <h3 class="text-left">Месторасположение</h3>
-                                    <span class="grey">Где находиться место работы?</span>
+                                    <h3 class="text-left" style="margin-bottom: 20px;">Месторасположение</h3>
+                                    <span style="font-size: 14px;line-height: 20px;color: #787f84; font-weight: 400;">Где находиться место работы?</span>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-city">Город <span class="text-danger">*</span></label>
+                                    <label for="input-city" class="info__label">Город <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="input-city">
                                 </div>
 
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="input-area">Регион <span class="text-danger">*</span> </label>
+                                    <label for="input-area" class="info__label">Регион <span
+                                            class="text-danger">*</span> </label>
                                     <input type="text" class="form-control" id="input-area">
                                 </div>
                             </div>
 
                             <div class="row mb-3">
                                 <div class="form-group col-12">
-                                    <label for="input-underground">Метро <span class="text-danger">*</span></label>
+                                    <label for="input-underground" class="info__label">Метро <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="input-underground">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group d-flex justify-content-center">
-                                    <a href="#" class="next-step">Следующий шаг. Регистрация</a>
+                                    <a class="next-step" id="firstStep">Следующий шаг. Регистрация</a>
                                 </div>
                             </div>
 
@@ -196,20 +209,20 @@
                     <div class="tab-pane fade" id="register">
 
                         <div class="row">
-                            <div class="form-group col-12">
-                                <label class="radio">
-                                    <input type="radio" class="form-check-input" name="reg" checked>Зарегистрироваться как новый пользователь
-                                </label>
+                            <div class="form-group col-12 d-flex align-items-center">
+                                <input type="radio" class="form-check-input " name="reg" id="regRadio" checked>
+                                <label class="radio reg-radio" for="regRadio" id="regRadioLabel" style="padding-left: 0;">Зарегистрироваться
+                                    как новый пользователь</label>
                             </div>
-                            <div class="form-group col-12">
-                                <label class="radio">
-                                    <input type="radio" class="form-check-input" name="reg">У меня уже есть логин
-                                </label>
+                            <div class="form-group col-12 d-flex align-items-center" style="margin-bottom: 30px">
+                                <input type="radio" class="form-check-input" id="loginRadio" name="reg">
+                                <label class="radio reg-radio" for="loginRadio" id="loginRadioLabel" style="padding-left: 0;">У меня уже есть
+                                    логин</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <p>
+                            <p style="margin-bottom: 30px; font-size: 0.9rem; max-width: 630px;">
                                 Вы будете зарегистрированы на сайте работа-вакансии под указанным ниже именем,
                                 данные для входа в личный кабинет будут высланы на указаный вами email.
                             </p>
@@ -217,99 +230,119 @@
 
                         <div class="row">
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-reg-name">Имя <span class="text-danger">*</span></label>
+                                <label for="input-reg-name" class="reg__label">Имя <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-reg-name" placeholder="Владимир">
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-reg-surname">Фамилия <span class="text-danger">*</span> </label>
+                                <label for="input-reg-surname" class="reg__label">Фамилия <span
+                                        class="text-danger">*</span> </label>
                                 <input type="text" class="form-control" id="input-reg-surname" placeholder="Иванов">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-reg-phone">Номер телефона <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="input-reg-phone" placeholder="+7 (___) ___-__-__">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                                 style="margin-bottom: 15px;">
+                                <label for="input-reg-phone" class="reg__label">Номер телефона <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="input-reg-phone"
+                                       placeholder="+7 (___) ___-__-__">
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-email">Email <span class="text-danger">*</span></label>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                                 style="margin-bottom: 0;">
+                                <label for="input-email" class="reg__label">Email <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-email" placeholder="ваш@email.ru">
                             </div>
                         </div>
 
-                        <div class="row mt-4">
-                            <h4 class="mb-4">Контактные данные для Вашей вакансии</h4>
+                        <div class="row" style="margin-top: 50px;">
+                            <h4 class="" style="margin-bottom: 40px; font-size: 1.3rem;">Контактные данные для Вашей
+                                вакансии</h4>
 
-                            <p>
-                                На указанные ниже контакты будут поступать заявки соискателей, а имя и фамилия будут указаны как контактное лицо, рассматривающее отклики.
+                            <p style="font-size: 0.9rem;">
+                                На указанные ниже контакты будут поступать заявки соискателей, а имя и фамилия будут
+                                указаны как контактное лицо, рассматривающее отклики.
                             </p>
                         </div>
 
-                        <div class="row">
-                            <label for="inputCbData">
-                                <input type="checkbox" id="inputCbData">Имя и телефон совпадают с вашими регистрационными данными
-                            </label>
+                        <div class="row" style="margin-top: 25px;">
+                            <div class="form-group d-flex align-items-center">
+                                <input type="checkbox" id="inputCbData" class="form-check-input" style="margin-bottom: 30px;">
+                                <label for="inputCbData" style="margin-left: 0px; margin-bottom: 30px; font-size: 0.9rem;">Имя и телефон совпадают с вашими
+                                    регистрационными данными</label>
+                            </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-name">Имя <span class="text-danger">*</span></label>
+                                <label for="input-name" class="reg__label">Имя <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-name" placeholder="Владимир">
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-surname">Фамилия <span class="text-danger">*</span> </label>
+                                <label for="input-surname" class="reg__label">Фамилия <span class="text-danger">*</span>
+                                </label>
                                 <input type="text" class="form-control" id="input-surname" placeholder="Иванов">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-phone">Номер телефона <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="input-phone" placeholder="+7 (___) ___-__-__">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <label for="input-phone" class="reg__label">Номер телефона <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="input-phone"
+                                       placeholder="+7 (___) ___-__-__">
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-second-phone">Дополнительный телефон</label>
-                                <input type="text" class="form-control" id="input-second-phone" placeholder="+7 (___) ___-__-__">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <label for="input-second-phone" class="reg__label">Дополнительный телефон</label>
+                                <input type="text" class="form-control" id="input-second-phone"
+                                       placeholder="+7 (___) ___-__-__">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-other-phone">Дополнительный телефон</label>
-                                <input type="text" class="form-control" id="input-other-phone" placeholder="+7 (___) ___-__-__">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <label for="input-other-phone" class="reg__label">Дополнительный телефон</label>
+                                <input type="text" class="form-control" id="input-other-phone"
+                                       placeholder="+7 (___) ___-__-__">
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-inn">ИНН  <span class="text-danger">*</span></label>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <label for="input-inn" class="reg__label">ИНН <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-inn" placeholder="6654543300">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-company">Название компании  <span class="text-danger">*</span></label>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom: 30px;">
+                                <label for="input-company" class="reg__label">Название компании <span
+                                        class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="input-company" placeholder="ООО Пекарня">
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label for="input-logo"></label>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="margin-bottom: 30px;">
+                                <label for="input-logo" class="reg__label" style="visibility: hidden">Логотип</label>
                                 <input type="file" class="form-control" id="input-logo" placeholder="Загрузить логотип">
                             </div>
                         </div>
 
                         <div class="row mb-4">
-                            <div class="form-group col-12">
+                            <div class="form-group col-12  d-flex align-items-center">
                                 <input type="checkbox" class="form-check-input" id="hideCompanyName">
-                                <label class="form-check-label" for="hideCompanyName">Скрыть из объявления название компании</label>
+                                <label class="form-check-label" for="hideCompanyName" style="margin-left: 20px;">Скрыть из объявления название
+                                    компании</label>
                             </div>
 
-                            <div class="form-group col-12">
+                            <div class="form-group col-12  d-flex align-items-center">
                                 <input type="checkbox" class="form-check-input" id="hideContacts">
-                                <label class="form-check-label" for="hideContacts">Не показывать в объявлении контактное лицо и телефон</label>
+                                <label class="form-check-label" for="hideContacts" style="margin-left: 20px;">Не показывать в объявлении контактное
+                                    лицо и телефон</label>
                             </div>
                         </div>
 
@@ -320,115 +353,132 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="fees">
+                    <div class="tab-pane fade col-md-12" id="fees" style="position: absolute;">
                         <div class="row">
                             <p class="fees-descr">
-                                Выберите сайты, на которых будет размещено ваше объявление,или используйте тарифы со скидками
+                                Выберите сайты, на которых будет размещено ваше объявление,или используйте тарифы со
+                                скидками
                                 и специальными предложениями!
                             </p>
                         </div>
 
-                        <div class="row" style="width: 710px">
-                            <div class="col-4 p-0">
-<!--                                <ul class="nav nav-tabs flex-column " id="myfees" role="tablist">-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-link fees-tab text-center" id="calc" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="info" aria-selected="true" style="border-radius: 0px; background:#6db746;">Калькулятор <br> размещения</a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-link fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="register" aria-selected="false" style="border-radius: 0; background:#683c7f;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Тариф ноября</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-link fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="fees" aria-selected="false" style="border-radius: 0; background:#27374e;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Региональный</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#3d5a80;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Все включено!</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#4d83cb;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Оптимальный</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#2d6559;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Эффективный</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#397d6f;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Профессионал</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                    <li class="nav-item col-12" role="presentation">-->
-<!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
-<!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#339c86;">-->
-<!--                                            <span class="text-secondary">Тариф</span>-->
-<!--                                            <h4>Бесплатный</h4>-->
-<!--                                        </a>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
+                        <div class="row" >
+                            <div class="fees-list col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 p-0">
+                                <!--                                <ul class="nav nav-tabs flex-column " id="myfees" role="tablist">-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-link fees-tab text-center" id="calc" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="info" aria-selected="true" style="border-radius: 0px; background:#6db746;">Калькулятор <br> размещения</a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-link fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="register" aria-selected="false" style="border-radius: 0; background:#683c7f;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Тариф ноября</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-link fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="fees" aria-selected="false" style="border-radius: 0; background:#27374e;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Региональный</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#3d5a80;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Все включено!</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#4d83cb;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Оптимальный</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#2d6559;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Эффективный</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#397d6f;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Профессионал</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                    <li class="nav-item col-12" role="presentation">-->
+                                <!--                                        <a class="nav-item fees-tab text-center" id="" data-bs-toggle="tab" href="#" role="tab"-->
+                                <!--                                           aria-controls="payment" aria-selected="false" style="border-radius: 0; background:#339c86;">-->
+                                <!--                                            <span class="text-secondary">Тариф</span>-->
+                                <!--                                            <h4>Бесплатный</h4>-->
+                                <!--                                        </a>-->
+                                <!--                                    </li>-->
+                                <!--                                </ul>-->
 
                                 <ul class="nav flex-column pb-5">
                                     <li class="nav-item">
-                                        <a class="nav-link active fees-tab" aria-current="page" href="#" style="background:#6db746">Калькулятор <br> размещения</a>
+                                        <a class="nav-link active fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="true" aria-controls="fees-calculator"
+                                           style="background:#6db746; font-size: 1.3rem;">Калькулятор <br> размещения</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#683c7f;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesNovember"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-november"
+                                           style="background:#683c7f;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Акции ноября</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#27374e;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-calculator"
+                                           style="background:#27374e;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Региональный</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#3d5a80;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesNovember"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-november"
+                                           style="background:#3d5a80;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Все включено!</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#4d83cb;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-calculator"
+                                           style="background:#4d83cb;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Оптимальный</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#2d6559;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-calculator"
+                                           style="background:#2d6559;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Эффективный</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#397d6f;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-calculator"
+                                           style="background:#397d6f;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Профессионал</h4>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link fees-tab" href="#" style="background:#339c86;">
-                                            <span class="text-secondary">Тариф</span>
+                                        <a class="nav-link fees-tab" aria-current="page" href="#feesCalculator"
+                                           data-bs-toggle="tab" role="tab" aria-selected="false" aria-controls="fees-calculator"
+                                           style="background:#339c86;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
                                             <h4>Бесплатный</h4>
                                         </a>
                                     </li>
@@ -436,11 +486,12 @@
 
                             </div>
 
-<!--                            КАЛЬКУЛЯТОР-->
+                            <!--                            КАЛЬКУЛЯТОР-->
 
-                            <div class="col-8" style="padding-right: 0;">
-                                <div class="card">
-                                    <div class="card-header bg-success text-white" style="padding: 23px 35px; font-size: 1.3rem;">
+                            <div class="col-8 fees-item tab-content" style="padding-right: 0;">
+                                <div class="card tab-pane fade show active" id="feesCalculator" role="tabpanel" aria-labelledby="fees-calculator-tab">
+                                    <div class="card-header text-white"
+                                         style="padding: 35px 35px; font-size: 1.3rem; line-height: 20px;color: #ffffff; font-weight: 500; background-color:#6DB746;">
                                         Калькулятор
                                     </div>
                                     <div class="card-body">
@@ -449,59 +500,71 @@
                                         </div>
                                     </div>
 
-                                    <div class="row card-body">
+                                    <div class="row card-body ">
                                         <div class="form-group col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" checked disabled>
-                                                <label class="form-check-label" for="flexCheckDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckThisSite" checked disabled>
+                                                <label class="form-check-label" for="calcCheckThisSite" style="margin-left: 20px;">
                                                     Работа-вакансии.рф
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
-                                                    45 сайтов <span class="text-success" style="font-size: 0.8rem;">Список</span>
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckMoreSites" checked disabled>
+                                                <label class="form-check-label" for="calcCheckMoreSites" style="margin-left: 20px;">
+                                                    45 сайтов <span style="font-size: 0.8rem; margin-left: 5px; color:#6db744;">Список</span>
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled">
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckRobot">
+                                                <label class="form-check-label" for="calcCheckRobot" style="margin-left: 20px;">
                                                     Робот-рекрутер.рф
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled">
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckJobmens">
+                                                <label class="form-check-label" for="calcCheckJobmens" style="margin-left: 20px;">
                                                     Jobmens.ru
                                                 </label>
                                             </div>
                                         </div>
 
                                         <div class="form-group col-6">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled">
-                                                <label class="form-check-label" for="flexCheckDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckSuperJob">
+                                                <label class="form-check-label" for="calcCheckSuperJob" style="margin-left: 20px;">
                                                     SuperJob.ru
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled">
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckHh">
+                                                <label class="form-check-label" for="calcCheckHh" style="margin-left: 20px;">
                                                     Hh.ru
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled">
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckRabota">
+                                                <label class="form-check-label" for="calcCheckRabota" style="margin-left: 20px;">
                                                     Rabota.ru
                                                 </label>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled">
-                                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                       id="calcCheckSocials">
+                                                <label class="form-check-label" for="calcCheckSocials" style="margin-left: 20px;">
                                                     Социальные сети
                                                 </label>
-                                                <p class="text-success" style="font-size: 0.8rem">Подробнее</p>
+                                                <br>
+
+                                            </div>
+                                            <div class="form-check">
+                                                <p class="" style="font-size: 0.8rem; color: #6DB746; padding-left: 12px;" >Подробнее</p>
                                             </div>
                                         </div>
                                     </div>
@@ -512,7 +575,8 @@
                                         </div>
                                         <div class="form-group col-12 row">
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center">
-                                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                                <select class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
                                                     <option selected>14 дней</option>
                                                     <option value="1">One</option>
                                                     <option value="2">Two</option>
@@ -520,8 +584,8 @@
                                                 </select>
                                             </div>
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-                                                <div class="form-group d-flex flex-column">
-                                                    <p class="d-flex flex-row justify-content-between">
+                                                <div class="form-group d-flex flex-column justify-content-center m-0">
+                                                    <p class="d-flex flex-row justify-content-between m-0">
                                                         <span class="text-secondary">
                                                             Цена:
                                                         </span>
@@ -529,36 +593,46 @@
                                                             520 р.
                                                         </span>
                                                     </p>
-                                                    <p class="d-flex flex-row justify-content-between">
+                                                    <p class="d-flex flex-row justify-content-between m-0">
                                                         <span class="text-secondary">
                                                             Со скидкой:
                                                         </span>
-                                                        <span class="text-success">
+                                                        <span style="color: #6db744;">
                                                             490 р.
                                                         </span>
                                                     </p>
                                                 </div>
                                             </div>
+
+                                            <div class="col-12 d-flex-justify-content-center" style="margin-top: 50px; margin-bottom: 10px;">
+                                                <div class="form-group d-flex justify-content-center align-items-center">
+                                                    <button type="button" class="btn text-white" style="background-color: #6DB746;">Выбрать и
+                                                        продолжить
+                                                    </button>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
+                                <!--                            АКЦИИ НОЯБРЯ-->
 
-<!--                            АКЦИИ НОЯБРЯ-->
+                                <div class="col-12 fees-item tab-pane" id="feesNovember" role="tabpanel" aria-labelledby="fees-calculator-tab" style="padding-right: 0;">
+                                    <div class="card">
+                                        <div class="card-header text-white"
+                                             style="padding: 12px 35px; font-size: 1.3rem; background:#683c7f;">
+                                            <span class="text-secondary" style="font-size: 0.8rem;">Тариф</span>
+                                            <h4>Акция ноября</h4>
+                                        </div>
 
-                            <div class="col-8" style="padding-right: 0;">
-                                <div class="card">
-                                    <div class="card-header text-white" style="padding: 23px 35px; font-size: 1.3rem; background:#683c7f;">
-                                        <span class="text-secondary">Тариф</span>
-                                        <h4>Акция ноября</h4>
-                                    </div>
-
-                                    <div class="card-body row">
+                                        <div class="card-body row">
 
                                             <div class="col-6">
                                                 <ul class="list-group">
-                                                    <li class="list-group-item" aria-current="true">52 сайта <span class="text-success" style="font-size: .8rem;">список</span></li>
+                                                    <li class="list-group-item" aria-current="true">52 сайта <span
+                                                            class="text-success" style="font-size: .8rem;">список</span>
+                                                    </li>
                                                     <li class="list-group-item">Superjob.ru</li>
                                                 </ul>
                                             </div>
@@ -569,33 +643,39 @@
                                                 </ul>
                                             </div>
 
-                                    </div>
-
-                                    <div class="card-body">
-                                        <div class="">
-                                            Период размещения: <span>14 дней</span>
                                         </div>
 
-                                        <div class="">
-                                            Стоимость размещения: <span>3300 руб.</span>
-                                        </div>
-                                    </div>
+                                        <div class="card-body">
+                                            <div class="">
+                                                Период размещения: <span>14 дней</span>
+                                            </div>
 
-                                    <div class="card-body bg-light">
-                                        <div class="d-flex flex-column">
-                                            <b>Подарок!</b>
-                                            <br>
-                                            <b>Баннер на сайте</b>
+                                            <div class="">
+                                                Стоимость размещения: <span>3300 руб.</span>
+                                            </div>
                                         </div>
 
-                                        <div class="d-flex flex-column">
-                                            <p>
-                                                Рекламируем вашу вакансию в течение всего периода размещения.
-                                            </p>
+                                        <div class="card-body bg-light">
+                                            <div class="d-flex flex-column">
+                                                <b>Подарок!</b>
+                                                <br>
+                                                <b>Баннер на сайте</b>
+                                            </div>
+
+                                            <div class="d-flex flex-column">
+                                                <p>
+                                                    Рекламируем вашу вакансию в течение всего периода размещения.
+                                                </p>
+                                            </div>
+
                                         </div>
 
-                                        <div class="card-footer d-flex align-items-center">
-                                            <button type="button" class="btn btn-success text-white">Выбрать и продолжить</button>
+                                        <div class="card-body">
+                                            <div class="form-group d-flex justify-content-center align-items-center" style="background: none;">
+                                                <button type="button" class="btn text-white" style="background-color: #6DB746;">Выбрать и
+                                                    продолжить
+                                                </button>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -603,34 +683,36 @@
                                 </div>
 
                             </div>
+
+
 
                         </div>
                     </div>
 
 
                     <div class="tab-pane fade" id="payment">
-                        <div class="row border-bottom mt-4">
+                        <div class="row border-bottom">
                             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                                <p class="fees-descr text-secondary" style="font-size: 0.9rem;">
+                                <p class="fees-descr text-secondary" style="font-size: 0.9rem; max-width: 373px">
                                     Выберите дополнительные услуги, чтобы ускорить
                                     поиск сотрудника и подтвердите размещение вакансии.
                                 </p>
                             </div>
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column align-items-center">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex flex-column align-items-center align-items-lg-end ">
                                     <span class="text-center d-flex justify-content-center align-items-center"
-                                          style="width: 142px; height: 36px; border: 1px solid black; border-radius: 2px; filter: drop-shadow(0.469px 2.963px 3.5px #b9b9b9); color: #402484;">
+                                          style="margin-bottom: 15px; width: 142px; height: 36px; border-radius: 2px; background-color:#fff; filter: drop-shadow(0.269px 1.963px 2.5px #b9b9b9);; color: #402484;">
                                         Акции ноября
                                     </span>
-                                <p>
-                                    <span class="text-secondary">Выбран тариф.</span> <span class="text-success">Изменить</span>
+                                <p class="d-flex justify-content-center payment-fees" style="font-size: 0.8rem; line-height: 20px; font-weight: 400; margin-bottom: 0;">
+                                    <span class="text-secondary">Выбран тариф. </span> &nbsp; <span class="" style="color: rgb(109, 183, 70);"> Изменить</span>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="row border-bottom pt-4 pb-4 d-flex align-items-center">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0">
+                        <div class="row border-bottom d-flex align-items-center" style="padding: 20px 0;">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0 d-flex align-items-center pay-check">
                                 <input type="checkbox" class="form-check-input" id="input-banner">
-                                <label for="input-banner">Баннер на сайте</label>
+                                <label for="input-banner" class="pay-label">Баннер на сайте</label>
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0">
@@ -642,15 +724,16 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end">
-                                <span class="text-secondary">Стоимость: </span> &nbsp; <span class="price"> 120 р.</span>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end pay-price">
+                                <span class="text-secondary">Стоимость: </span> &nbsp; <span
+                                    class="price"> 120 р.</span>
                             </div>
                         </div>
 
-                        <div class="row border-bottom pt-4 pb-4 d-flex align-items-center">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0">
+                        <div class="row border-bottom d-flex align-items-center" style="padding: 25px 0 40px 0;">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0 d-flex align-items-center pay-check">
                                 <input type="checkbox" class="form-check-input" id="input-top">
-                                <label for="input-top">Закрепление в топе </label>
+                                <label for="input-top" class="pay-label">Закрепление в топе </label>
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0">
@@ -662,23 +745,24 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end">
-                                <span class="text-secondary">Стоимость: </span> &nbsp; <span class="price"> 120 р.</span>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end pay-price">
+                                <span class="text-secondary">Стоимость: </span> &nbsp; <span
+                                    class="price"> 120 р.</span>
                             </div>
 
-                            <div class="form-group col-12 mt-4">
-                                <p class="text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum <span class="text-success">gravida</span>.
+                            <div class="form-group col-12">
+                                <p class="text-center" style="margin-top: 40px; margin-bottom: 0;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum <span class="" style="color: rgb(109, 183, 70);">gravida</span>.
                                 </p>
                             </div>
                         </div>
 
 
-
-                        <div class="row border-bottom pt-4 pb-4 d-flex align-items-center">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0">
+                        <div class="row border-bottom d-flex align-items-center" style="padding: 25px 0 20px 0;">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0 d-flex align-items-center pay-check">
                                 <input type="checkbox" class="form-check-input" id="input-color">
-                                <label for="input-color">Выделение цветом</label>
+                                <label for="input-color" class="pay-label">Выделение цветом</label>
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0">
@@ -690,15 +774,16 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end">
-                                <span class="text-secondary">Стоимость: </span> &nbsp; <span class="price"> 120 р.</span>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end pay-price">
+                                <span class="text-secondary">Стоимость: </span> &nbsp; <span
+                                    class="price"> 120 р.</span>
                             </div>
                         </div>
 
-                        <div class="row border-bottom pt-4 pb-4 d-flex align-items-center">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0">
+                        <div class="row border-bottom d-flex align-items-center" style="padding: 20px 0 25px 0;">
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 m-0 d-flex align-items-center pay-check">
                                 <input type="checkbox" class="form-check-input" id="input-phone-number">
-                                <label for="input-phone-number">Номер 8-800</label>
+                                <label for="input-phone-number" class="pay-label">Номер 8-800</label>
                             </div>
 
                             <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 m-0">
@@ -710,51 +795,55 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end">
-                                <span class="text-secondary">Стоимость: </span> &nbsp; <span class="price"> 120 р.</span>
+                            <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 m-0 d-flex justify-content-end pay-price">
+                                <span class="text-secondary">Стоимость: </span> &nbsp; <span
+                                    class="price"> 120 р.</span>
                             </div>
                         </div>
 
-                        <div class="row border-bottom pt-4 pb-4 d-flex align-items-center">
+                        <div class="row border-bottom d-flex align-items-center" style="padding: 25px 0 75px 0;">
                             <div class="form-group col-12 m-0">
-                                <div class="border d-flex justify-content-around mb-3 p-2 choose-plan"
-                                     style="border-radius: 2px; filter: drop-shadow(0.469px 2.963px 3.5px #b9b9b9);"
-                                >
-                                    <span style="color: #402484">Выбран тариф «Акция ноября»</span>
-                                    <span class="text-success">Изменить</span>
+                                <div class="border d-flex justify-content-between mb-3 p-2 choose-plan"
+                                     style="border-radius: 2px; -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);-moz-box-shadow:    0px 2px 7px 0px rgba(0, 0, 0, 0.3);box-shadow:         0px 2px 7px 0px rgba(0, 0, 0, 0.3);"                                >
+                                    <span style="color: #402484; padding-left: 30px;" class="payment-fees-footer">Выбран тариф «Акция ноября»</span>
+                                    <span class="payment-fees-change" style="padding-right: 30px; color: rgb(109, 183, 70);">Изменить</span>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="mt-5 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column align-items-end text-secondary">
-                                    <p>Размещение объявления: <span>47 р.</span></p>
-                                    <p>Дополнительные услуги: <span>1429 р.</span></p>
-                                    <p>Итого: <span>1476 р.</span></p>
-                                    <p>Сума со скидкой: <span>1016 р.</span></p>
+                            <div class="row" style="padding-top: 60px;">
+                                <div class="payment-price col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex flex-column align-items-end text-secondary" style="padding-right: 50px; padding-top: 5px;">
+                                    <p style="margin-bottom: 25px; width: 100%;">Размещение объявления: &nbsp; <span>47 р.</span></p>
+                                    <p style="margin-bottom: 25px; width: 100%;">Дополнительные услуги: &nbsp; <span>1429 р.</span></p>
+                                    <p style="margin-bottom: 25px; width: 100%;">Итого: &nbsp; <span style="color: #27374e">1476 р.</span></p>
+                                    <p style="margin-bottom: 25px; width: 100%;">Сумма со скидкой: &nbsp; <span style="color: #27374e">1016 р.</span></p>
                                 </div>
 
-                                <div class="mt-5 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column">
-                                    <div class="form-group">
+                                <div class="payment-type col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex flex-column" style="color: #27374e;">
+                                    <div class="form-group" style="margin-bottom: 40px;">
                                         <h4 style="font-size: 1.1rem;">Оплата размещения вакансии</h4>
-                                        <p style="font-size: 0.9rem;">«Водитель такси» <span class="text-secondary">id 30287</span></p>
+                                        <p style="font-size: 0.9rem;">«Водитель такси» <span class="text-secondary">id 30287</span>
+                                        </p>
                                     </div>
 
                                     <div class="form-group">
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
+                                        <div class="form-check mb-2 d-flex align-items-center">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1" style="margin-left: 30px;">
                                                 Карта
                                             </label>
                                         </div>
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">
+                                        <div class="form-check mb-2 d-flex align-items-center">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2" style="margin-left: 30px;">
                                                 Счет
                                             </label>
                                         </div>
-                                        <div class="form-check mb-2">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">
+                                        <div class="form-check mb-2 d-flex align-items-center">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2" style="margin-left: 30px;">
                                                 Баланс на сайте
                                             </label>
                                         </div>
@@ -764,18 +853,20 @@
                                 <div class="mt-4 col-12 d-flex flex-column">
                                     <div class="form-group">
                                         <p class="text-center">
-                                            После нажатия на кнопку "Оплата размещения" вы будете перенаправлены на сайт Robokassa,
+                                            После нажатия на кнопку "Оплата размещения" вы будете перенаправлены на сайт
+                                            Robokassa,
                                             для перевода указанной суммы.
                                         </p>
                                     </div>
                                     <div class="form-group d-flex justify-content-center col-12">
                                         <p class="text-center  col-8" style="font-size: .7rem;">
-                                            Нажимая "Оплата размещения", вы подтверждаете, что ознакомлены и полностью согласны с <span class="text-success">условиями использования сайта </span>.
+                                            Нажимая "Оплата размещения", вы подтверждаете, что ознакомлены и полностью
+                                            согласны с <span class="" style="color: rgb(109, 183, 70);">условиями использования сайта </span>.
                                         </p>
                                     </div>
 
                                     <div class="form-group d-flex justify-content-center">
-                                        <button type="button" class="btn btn-success">Оплата размещения</button>
+                                        <button type="button" class="btn" style="background: rgb(109, 183, 70);">Оплата размещения</button>
                                     </div>
 
                                 </div>
@@ -784,7 +875,7 @@
                         </div>
 
 
-                </div>
+                    </div>
 
             </form>
 
@@ -795,7 +886,9 @@
 </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
 
 <script src="./main.js"></script>
 
